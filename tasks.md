@@ -49,7 +49,8 @@ SELECT DISTINCT (awayteam) FROM matches WHERE awayteam LIKE '%City%';
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM divisions WHERE country = 'France';
+SELECT COUNT (DISTINCT hometeam) AS "Number of Teams" FROM matches WHERE division_code = 'F1' OR division_code = 'D2';
 
 ```
 
