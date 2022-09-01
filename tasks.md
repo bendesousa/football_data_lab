@@ -58,7 +58,7 @@ SELECT COUNT (DISTINCT hometeam) AS "Number of Teams" FROM matches WHERE divisio
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM matches WHERE hometeam = 'Huddersfield' AND awayteam = 'Swansea';
 
 ```
 
