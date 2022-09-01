@@ -23,7 +23,7 @@ SELECT * FROM matches WHERE hometeam = 'Barcelona' OR awayteam = 'Barcelona';
 
 ```sql
 <!-- Copy solution here -->
-SELECT * FROM divisions WHERE country = 'Scotland';
+SELECT DISTINCT name FROM divisions WHERE country = 'Scotland';
 
 ```
 
@@ -31,7 +31,8 @@ SELECT * FROM divisions WHERE country = 'Scotland';
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT * FROM divisions WHERE name = 'Bundesliga';
+SELECT COUNT(*) FROM matches WHERE hometeam = 'Freiburg' OR awayteam = 'Freiburg' AND division_code = 'D1';
 
 ```
 
