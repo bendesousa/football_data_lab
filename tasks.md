@@ -66,7 +66,8 @@ SELECT * FROM matches WHERE hometeam = 'Huddersfield' AND awayteam = 'Swansea';
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT code FROM divisions WHERE name = 'Eredivisie';
+SELECT COUNT(*) FROM matches WHERE (ftr = 'D' AND division_code = 'N1') AND (season BETWEEN 2010 AND 2015);
 
 ```
 
@@ -74,7 +75,8 @@ SELECT * FROM matches WHERE hometeam = 'Huddersfield' AND awayteam = 'Swansea';
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT code FROM divisions WHERE name = 'Premier League';
+SELECT * FROM matches WHERE division_code = 'E0' ORDER BY (fthg + ftag) DESC, fthg DESC;
 
 ```
 
