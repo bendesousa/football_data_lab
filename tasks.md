@@ -40,7 +40,8 @@ SELECT COUNT(*) FROM matches WHERE hometeam = 'Freiburg' OR awayteam = 'Freiburg
 
 ```sql
 <!-- Copy solution here -->
-
+SELECT DISTINCT (hometeam) FROM matches WHERE hometeam LIKE '%City%';
+SELECT DISTINCT (awayteam) FROM matches WHERE awayteam LIKE '%City%';
 
 ```
 
