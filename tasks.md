@@ -32,7 +32,7 @@ SELECT DISTINCT name FROM divisions WHERE country = 'Scotland';
 ```sql
 <!-- Copy solution here -->
 SELECT * FROM divisions WHERE name = 'Bundesliga';
-SELECT COUNT(*) FROM matches WHERE hometeam = 'Freiburg' OR awayteam = 'Freiburg' AND division_code = 'D1';
+SELECT COUNT(*) FROM matches WHERE (hometeam = 'Freiburg' OR awayteam = 'Freiburg') AND division_code = 'D1';
 
 ```
 
@@ -50,7 +50,7 @@ SELECT DISTINCT (awayteam) FROM matches WHERE awayteam LIKE '%City%';
 ```sql
 <!-- Copy solution here -->
 SELECT * FROM divisions WHERE country = 'France';
-SELECT COUNT (DISTINCT hometeam) AS "Number of Teams" FROM matches WHERE division_code = 'F1' OR division_code = 'D2';
+SELECT COUNT (DISTINCT hometeam) AS "Number of Teams" FROM matches WHERE division_code = 'F1' OR division_code = 'F2';
 
 ```
 
